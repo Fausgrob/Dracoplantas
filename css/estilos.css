@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+/*mobile first*/
+*{ 
+    padding: 0%;
+    margin: 0%;
+}
+
+body{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vw;
+    justify-content: center;
+}
+
+header{
+    font-size: large;
+    display: grid;
+    justify-content: center;
+    background-color: rgb(38, 90, 9);
+}
+
+h1, h2{
+    color: rgb(118, 241, 107);
+}
+
+.primerparrafo{
+    color: black;
+    font-size: small;
+}
+
+footer{
+    color: black;
+    justify-content: left;
+    background-color: aquamarine;
+    margin-bottom: 0%;
+    margin-top: 1.5em;
+
+}
+
+header{
+    grid-area: header;
+}
+
+h1{
+    grid-area: h1;
+}
+
+.mosaico{
+grid-area: mosaico;
+}
+
+.araza{
+    grid-area: araza;
+}
+
+.lavandas{
+grid-area: lavandas;
+}
+
+.ciboulette{
+    grid-area: ciboulette;
+}
+
+.breveintro{
+    grid-area: breveintro;
+}
+
+footer{
+    grid-area: footer;
+}
+
+.envolturita{
+    background-color: rgb(61, 78, 7);
+    justify-content: center;
+    margin-bottom: 1.5em;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "header"
+    "h1"
+    "mosaico"
+    "araza"
+    "lavandas"
+    "ciboulette"
+    "breveintro"
+    "footer";
+}
+
+.galeria{
+    background-color: blue;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    gap: 15px;
+}
+
+img{
+    width: 300px;
+    height: 250px;
+    border: 2px solid rgb(26, 25, 25) ;
+    margin-top: 15px;
+}
+
+@media(min-width:500px){
+    .envolturita{
+        margin: 0px;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: repeat 10 1fr;
+        grid-template-areas:    
+        "header header header"
+        "h1 h1 h1"
+        "mosaico mosaico mosaico"
+        "araza lavandas ciboulette"
+        "breveintro breveintro breveintro"
+        "footer footer footer";
+    }
+}
+
+@media(min-width: 768px){
+    .envolturita{
+        background-color: rgb(38, 57, 5);
+        justify-content: center;
+        margin-bottom: 1.5em;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "header header header"
+        "h1 h1 h1"
+        "mosaico mosaico mosaico"
+        "araza lavandas ciboulette"
+        "araza lavandas ciboulette"
+        "araza lavandas ciboulette"
+        "breveintro breveintro breveintro"
+        "footer footer footer";
+
+    }
+}
+    
