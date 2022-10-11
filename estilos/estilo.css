@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+/*mobile first*/
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header{
+  background-color: rgb(19, 109, 23);
+  color: rgb(13, 130, 64);
+  font-size: large;
+  display: grid;
+  justify-content: center;
+  text-decoration: none;
+}
+
+header h1{
+  color: rgb(13, 130, 64);
+}
+
+nav ul li{
+list-style-type: none;
+color: rgb(13, 130, 64);
+border: 3px solid rgb(19, 109, 23);
+
+}
+
+header,nav,h1{
+  color: rgb(13, 130, 64);
+}
+
+footer{
+  padding: 3em;
+background-color:rgb(19, 109, 23);
+margin-bottom: 0;
+margin-top: 1.5em;
+}
+
+header{
+  grid-area: header;
+}
+
+main{
+  grid-area: main;
+}
+
+footer{
+  grid-area: footer;
+}
+
+h1{
+  grid-area: h1;
+}
+
+.mosaico{
+  grid-area: mosaico;
+}
+
+.araza{
+  grid-area: araza;
+}
+
+.lavandas{
+  grid-area: lavandas;
+}
+
+.ciboulette{
+  grid-area: ciboulette;
+}
+
+.breveintro{
+  grid-area: breveintro;
+}
+
+.video{
+  grid-area: video;
+}
+
+.envolturita{
+background-color: rgb(29, 105, 52);
+margin-bottom: 1,5em;
+display: grid;
+gap: 20px;
+grid-template-areas: 
+"header"
+"main"
+"footer";
+}
+
+img{
+  width: 300px;
+  height: 250px;
+  border: 8px;
+  align-items: center;
+}
+
+.breveintro{
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.video{
+  width: 200px;
+  height: 150px;
+  border: 8px;
+  align-items: center;
+  margin: 10px, 20px, 10px, 20px;
+}
+
+.medio{
+  background-color: rgb(29, 90, 9);
+  display: grid;
+  grid-template-areas: 
+"h1"
+"mosaico"
+"araza"
+"lavandas"
+"ciboulette"
+"breveintro"
+"video";
+}
+
+@media(min-width:500px){
+  .envolturita{
+    background-color: rgb(22, 71, 10);
+    margin: 0px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "footer footer";
+  }
+  nav ul{
+    display: flex;
+    justify-content: space-between;
+  }
+  nav ul .breveintro{
+    color: grey;
+    border: 3px solid green;
+  }
+  img{
+    width: 350px;
+    height: 300px;
+  } }
+  footer{
+    margin-top: 0%;
+  }
+
+@media(min-width:768px){
+  .medio{
+    background-color: rgb(29, 90, 9);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+  "h1 h1"
+  "mosaico araza"
+  "lavandas ciboulette"
+  "breveintro breveintro";
+  }
+  
+  img{
+    border: 5px solid black;
+    align-items: center
+  }
+}
+
+
+
+
+
+
+font-family: 'Poppins',sans-serif;
+
