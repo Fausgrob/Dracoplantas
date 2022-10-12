@@ -1,0 +1,17 @@
+header{
+    background-color: rgb(19, 109, 23);
+    color: rgb(13, 130, 64);
+    font-size: large;
+    display: grid;
+    justify-content: center;
+    text-decoration: none;
+        nav {
+            ul{
+                li{
+            list-style-type: none;
+            color: rgb(13, 130, 64);
+            border: 3px solid rgb(19, 109, 23);
+                }
+            }
+        }
+    }

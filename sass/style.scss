@@ -1,43 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
-/*mobile first*/
+@import"fuentes";
+@import"generales";
+@import"index";
+@import"parrafo";
 
-*{
-  padding: 0;
-  margin: 0;
-}
 
-body{
-  text-align: center;
-  font-family: 'Poppins', sans-serif;
-  font-weight: bolder;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-header{
-  background-color: rgb(19, 109, 23);
-  color: rgb(13, 130, 64);
-  font-size: large;
-  display: grid;
-  justify-content: center;
-  text-decoration: none;
-}
-
-header h1{
-  color: rgb(13, 130, 64);
-}
-
-nav ul li{
-list-style-type: none;
-color: rgb(13, 130, 64);
-border: 3px solid rgb(19, 109, 23);
-
-}
-
-header,nav,h1{
-  color: rgb(13, 130, 64);
-}
 
 footer{
   padding: 3em;
@@ -104,11 +70,7 @@ img{
   align-items: center;
 }
 
-.breveintro{
-  text-align: center;
-  margin-left: 10px;
-  margin-right: 10px;
-}
+
 
 .video{
   width: 200px;
@@ -174,11 +136,3 @@ img{
     align-items: center
   }
 }
-
-
-
-
-
-
-font-family: 'Poppins',sans-serif;
-
